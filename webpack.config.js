@@ -1,4 +1,14 @@
 const path = require('path');
+const webpack = require("webpack");
+
+
+plugins:[
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery"
+    }),
+  ],
+
 module.exports = {
   entry: './assets/js/script.js',
   output: {
